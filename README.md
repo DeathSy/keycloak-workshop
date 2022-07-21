@@ -13,3 +13,12 @@ To spin up keycloak run following command
 $ docker compose up
 ```
 The you will find keycloak running on port 8080
+
+To start api application, first go to api directory then run the following command
+```sh
+$ yarn dev
+```
+To start frontend application, first go to frontend directory then run the following command
+```sh
+$ yarn start
+```
