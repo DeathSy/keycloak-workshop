@@ -2,9 +2,9 @@
 
 
 ### To go along with us you'll need
-- docker
-- node v12 or above
-- yarn or npm
+- [docker](https://docs.docker.com/get-docker/)
+- [node v12 or above](https://nodejs.org/en/download/)
+- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) or npm
 
 
 ## Get Started
