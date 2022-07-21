@@ -6,14 +6,19 @@ services:
     ports:
       - 8080:8080
     environment:
-      - DB_ADDR=db
-      - DB_USER=keycloak
-      - DB_PASSWORD=password
-      - KEYCLOAK_USER=admin
-      - KEYCLOAK_PASSWORD=admin
+      DB_ADDR: db
+      DB_VENDOR: POSTGRES
+      DB_USER: keycloak
+      DB_PASSWORD: password
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+      DB_DATABASE: keycloak
+    depends_on:
+      - db
   
   db:
     image: postgres
     environment:
-      - POSTGRES_USER=keycloak
-      - POSTGRES_PASSWORD=password
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: keycloak
